@@ -7,7 +7,12 @@ after that point is computed in Python** — weighted scores, peer benchmarks,
 the Peer Performance Index, tie-breaks and final ranks. The model is never
 asked to do arithmetic and never asked to rank anything.
 
-> **Live app:** _(added at deployment — see [Deployment](#deployment))_
+> **▶ Live app:** <https://rfp-evaluator-ckohnjxfgrurwryxr3niqn.streamlit.app>
+> · **Source:** <https://github.com/waitwoot/rfp-evaluator>
+>
+> The hosted app runs `openai/gpt-oss-120b` via Groq. Free-tier quota is 200,000
+> tokens per day (about eight four-supplier runs); if it is exhausted the app
+> reports the rate limit cleanly rather than failing silently.
 
 ![Leaderboard](docs/screenshots/03_leaderboard.png)
 
