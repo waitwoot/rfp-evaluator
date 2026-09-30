@@ -53,7 +53,7 @@ def main() -> int:
 
         print(f"opening {args.url}")
         page.goto(args.url, wait_until="networkidle")
-        page.wait_for_selector('[data-testid="stTabs"]', timeout=60_000)
+        page.get_by_role("tab", name="Criteria").first.wait_for(timeout=180_000)
         page.wait_for_timeout(2500)
 
         # 1 -- criteria

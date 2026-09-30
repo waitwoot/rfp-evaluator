@@ -21,3 +21,8 @@ __pycache__/
 
 # os
 .DS_Store
+
+# demo recording intermediates (the .mp4 is committed, the raw .webm is not)
+docs/demo/*.webm
+docs/demo/downloaded_run.json
+docs/demo/rfp_demo_5min.mp4
