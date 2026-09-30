@@ -1,0 +1,3 @@
+This is a plain text file that has been renamed with a .pdf extension.
+It has no %-P-D-F header, so the document tool must reject it before any
+LLM call is made. FICTIONAL -- academic exercise.

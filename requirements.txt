@@ -1,0 +1,10 @@
+streamlit==1.64.0
+pandas==3.0.6
+pydantic==2.13.5
+langgraph==1.2.12
+pymupdf==1.28.2
+pypdf==6.19.0
+openai==3.19.2
+anthropic==1.8.0
+reportlab==5.0.1
+pytest==9.1.1

@@ -1,0 +1,23 @@
+# virtual environment
+.venv/
+venv/
+
+# databases -- runs are regenerated, never committed
+*.db
+*.db-journal
+*.sqlite3
+
+# secrets -- NEVER commit
+.streamlit/secrets.toml
+.env
+*.key
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# os
+.DS_Store

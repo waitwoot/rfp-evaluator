@@ -1,0 +1,683 @@
+{
+  "rfp_run_id": "RFP-20260928-DD4F0E",
+  "created_at": "2026-09-28T13:03:13+05:30",
+  "completed_at": "2026-09-28T13:05:19+05:30",
+  "status": "COMPLETED",
+  "llm_provider": "openai",
+  "llm_model": "openai/gpt-oss-120b",
+  "llm_base_url": "https://api.groq.com/openai/v1",
+  "fault_mode": null,
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture and technology stack, scalability and performance, integration approach with existing systems, and overall technical depth demonstrated in the proposed solution.",
+      "weight": 30.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Project phases and realism of the timeline, named milestones and deliverables, team composition and resourcing, data migration and cutover approach, and how delivery risk is managed.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Total cost of ownership, transparency and completeness of the price breakdown, stated commercial assumptions, payment terms, and overall value for money relative to what is delivered.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Named certifications and standards, data protection and residency, access control and encryption, audit logging, regulatory compliance, and documented risk controls.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model and response/resolution SLAs, training and handover, account management, and relevant past projects with verifiable references.",
+      "weight": 10.0,
+      "max_score": 10.0,
+      "is_active": true
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-09-08",
+      "experience_rating": 4.2,
+      "absolute_score": 84.0,
+      "ppi": 97.7778,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 8.5,
+          "benchmark": 8.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 25.5,
+          "status": "OK",
+          "evidence_verified": false,
+          "justification": "The proposal details a modern, scalable architecture with Kubernetes, PostgreSQL 16, Redis and documented APIs, showing strong technical depth and integration capability.",
+          "evidence": "The solution is a service‑oriented application deployed on a Kubernetes cluster in two geographically separated regions, with PostgreSQL 16 in a primary‑replica configuration and automated failover."
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "weighted_points": 16.0,
+          "status": "OK",
+          "evidence_verified": false,
+          "justification": "A clear nine‑month phased plan with specific milestones, team roles and data‑migration rehearsals demonstrates a realistic implementation approach.",
+          "evidence": "We propose a nine month programme... Phase 1 Discovery and design 1-6 ... Solution design document, signed off"
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 7.5,
+          "benchmark": 7.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 15.0,
+          "status": "OK",
+          "evidence_verified": false,
+          "justification": "The cost breakdown is transparent and includes fixed implementation fees and recurring charges, but payment terms are not detailed, limiting full assessment of value.",
+          "evidence": "Pricing is fixed-price for the implementation, with recurring charges held flat for the initial three year term... Total cost of ownership $395,000 + 3 x $78,000 = $629,000"
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 9.5,
+          "benchmark": 9.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 19.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The solution is backed by ISO 27001:2022 certification, SOC 2 Type II, encryption, role‑based access and regular CREST‑accredited penetration testing, meeting high security standards.",
+          "evidence": "Apex Systems holds ISO 27001:2022 certification, most recently audited in March 2026, and completes an annual SOC 2 Type II examination."
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 8.5,
+          "benchmark": 8.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 8.5,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "24x7 support with defined SLAs, a service delivery manager and relevant public‑sector references provide confidence in ongoing service and experience.",
+          "evidence": "Support is 24x7 for priority 1 incidents with a one hour response target and a four hour resolution target"
+        }
+      ],
+      "risks": [
+        "Potential loss of key personnel (Solution Architect or Data Migration Lead) despite contractual commitment could jeopardise migration schedule"
+      ],
+      "overall_summary": "Apex Systems presents a technically robust, well‑documented solution with solid security and support arrangements. The implementation plan is detailed and realistic, though commercial terms lack full payment detail. The main risk lies in reliance on specific staff members for critical migration activities.",
+      "warnings": [
+        "'Technical Capability': quoted evidence was not found in the document text; score kept but marked unverified.",
+        "'Implementation Plan': quoted evidence was not found in the document text; score kept but marked unverified.",
+        "'Commercial Value': quoted evidence was not found in the document text; score kept but marked unverified."
+      ],
+      "parse_failed": false,
+      "document": {
+        "source_name": "apex_systems_proposal.pdf",
+        "page_count": 4,
+        "char_count": 9534,
+        "extractor": "pymupdf",
+        "truncated": false,
+        "warnings": []
+      },
+      "final_rank": 1,
+      "tie_break_reason": "Higher PPI: Apex Systems 97.7778 vs NexaWorks 95.2611.",
+      "tie_break_rule_level": 1
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-09-09",
+      "experience_rating": 4.0,
+      "absolute_score": 82.0,
+      "ppi": 95.2611,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "benchmark": 8.5,
+          "gap": -0.5,
+          "relative_pct": 94.1176,
+          "weighted_points": 24.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The proposal details a modern cloud‑hosted architecture with managed containers, PostgreSQL, backups and read‑replica reporting, showing solid technical depth though lacking explicit performance metrics.",
+          "evidence": "The platform is a cloud-hosted application built on our established library product, configured and extended for the Service. It runs on managed container infrastructure with a managed PostgreSQL database, automated daily backups with 35 day retention, and a tested restore procedure exercised quarterly."
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 9.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 18.0,
+          "status": "OK",
+          "evidence_verified": false,
+          "justification": "A clear seven‑month, seven‑phase plan with staged rollout, defined exit criteria and named accountability demonstrates a realistic and well‑governed implementation schedule.",
+          "evidence": "Seven months, seven phases, with a staged rollout. Two pilot branches go live in week 20; the remaining ten follow in three waves once the pilot has run a full month."
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 7.0,
+          "benchmark": 7.5,
+          "gap": -0.5,
+          "relative_pct": 93.3333,
+          "weighted_points": 14.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The cost breakdown is transparent and includes both one‑off and recurring charges, but payment terms and potential cost overruns are not addressed.",
+          "evidence": "Total cost of ownership $312,000 + 3 x $58,000 = $486,000"
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 9.0,
+          "benchmark": 9.5,
+          "gap": -0.5,
+          "relative_pct": 94.7368,
+          "weighted_points": 18.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The response lists ISO 27001 certification, encryption, role‑based access, audit logging and a pre‑go‑live penetration test, meeting most security and compliance expectations.",
+          "evidence": "NexaWorks holds ISO 27001 certification and operates a documented secure development lifecycle including peer review, dependency scanning and static analysis on every change."
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "benchmark": 8.5,
+          "gap": -0.5,
+          "relative_pct": 94.1176,
+          "weighted_points": 8.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "Support hours align with library opening times and SLAs are clearly defined; references to similar projects add credibility, though no third‑party verification is provided.",
+          "evidence": "Support runs 07:00 to 19:00 Monday to Saturday, matching library opening hours rather than office hours, with on-call cover for priority 1 incidents outside those times. Response targets are 30 minutes for priority 1, two hours for priority 2, and one business day for priority 3."
+        }
+      ],
+      "risks": [
+        "The continuous improvement pool hours do not roll over between years, risking unused budget if demand for small changes is lower than anticipated."
+      ],
+      "overall_summary": "NexaWorks presents a technically sound, well‑structured solution with detailed implementation and security plans, supported by clear cost information and relevant references. However, limited detail on payment terms and the non‑rollover improvement pool introduce financial and budgeting uncertainties.",
+      "warnings": [
+        "'Implementation Plan': quoted evidence was not found in the document text; score kept but marked unverified."
+      ],
+      "parse_failed": false,
+      "document": {
+        "source_name": "nexaworks_proposal.pdf",
+        "page_count": 4,
+        "char_count": 9287,
+        "extractor": "pymupdf",
+        "truncated": false,
+        "warnings": []
+      },
+      "final_rank": 2,
+      "tie_break_reason": "Higher PPI: NexaWorks 95.2611 vs Orbit Digital 88.3330.",
+      "tie_break_rule_level": 1
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-09-10",
+      "experience_rating": 4.6,
+      "absolute_score": 76.0,
+      "ppi": 88.333,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 6.5,
+          "benchmark": 8.5,
+          "gap": -2.0,
+          "relative_pct": 76.4706,
+          "weighted_points": 19.5,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The proposal describes a mature version‑11 cloud‑based platform and integration experience, but provides limited detail on scalability testing or performance metrics.",
+          "evidence": "Orbit Library Platform is a mature product, currently on version 11, used by 61 library services."
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "weighted_points": 16.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "A detailed eight‑month phased plan with weekly milestones, defined team roles and risk mitigations is presented, showing realistic delivery.",
+          "evidence": "Eight months, following our standard implementation methodology refined across 61 deployments."
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 7.0,
+          "benchmark": 7.5,
+          "gap": -0.5,
+          "relative_pct": 93.3333,
+          "weighted_points": 14.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The cost breakdown is clear and includes one‑off and recurring charges, yet payment terms are limited to CPI review after year four and no discount or financing options are disclosed.",
+          "evidence": "Total cost of ownership $268,000 + 3 x $62,000 = $454,000"
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 9.0,
+          "benchmark": 9.5,
+          "gap": -0.5,
+          "relative_pct": 94.7368,
+          "weighted_points": 18.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "ISO 27001 and ISO 9001 certifications, encryption at rest and in transit, role‑based access and regular penetration testing demonstrate strong security and compliance posture.",
+          "evidence": "Orbit Digital holds ISO 27001 and ISO 9001 certification, both audited within the last twelve months."
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 8.5,
+          "benchmark": 8.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 8.5,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "Support model includes 08:00‑18:00 coverage, one‑hour priority response, dedicated account manager and extensive library‑sector experience, though out‑of‑hours support incurs extra cost.",
+          "evidence": "Priority 1 response is one hour."
+        }
+      ],
+      "risks": [
+        "Integration scope may exceed the allowance, leading to additional costs and schedule variation."
+      ],
+      "overall_summary": "Orbit Digital presents a solid technical and implementation approach with clear costs and strong security credentials. However, limited performance detail and potential integration cost overruns pose risks that the buyer should manage.",
+      "warnings": [],
+      "parse_failed": false,
+      "document": {
+        "source_name": "orbit_digital_proposal.pdf",
+        "page_count": 4,
+        "char_count": 7931,
+        "extractor": "pymupdf",
+        "truncated": false,
+        "warnings": []
+      },
+      "final_rank": 3,
+      "tie_break_reason": "Higher PPI: Orbit Digital 88.3330 vs BrightPath Tech 68.3949.",
+      "tie_break_rule_level": 1
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-09-11",
+      "experience_rating": 2.5,
+      "absolute_score": 58.0,
+      "ppi": 68.3949,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 5.0,
+          "benchmark": 8.5,
+          "gap": -3.5,
+          "relative_pct": 58.8235,
+          "weighted_points": 15.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The proposal describes a multi‑tenant SaaS on a major cloud provider and a standard SIP2 connector, showing basic technical architecture but lacks detail on scalability, performance and deeper technical depth.",
+          "evidence": "BrightPath Library Cloud is a multi-tenant SaaS application hosted on a major public cloud provider."
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "weighted_points": 16.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "A clear four‑phase, 16‑week schedule with defined milestones, team roles and data migration approach is provided, indicating a realistic implementation plan.",
+          "evidence": "Sixteen weeks, four phases. The plan assumes the Service can make configuration decisions within five working days of each request."
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 7.0,
+          "benchmark": 7.5,
+          "gap": -0.5,
+          "relative_pct": 93.3333,
+          "weighted_points": 14.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The cost breakdown is detailed and totals are transparent, giving a clear view of total cost of ownership, though commercial assumptions are limited.",
+          "evidence": "Total cost of ownership $186,000 + 3 x $34,000 = $288,000"
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 4.0,
+          "benchmark": 9.5,
+          "gap": -5.5,
+          "relative_pct": 42.1053,
+          "weighted_points": 8.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "The solution is hosted on a cloud with industry certifications, but the supplier has no current ISO 27001 certification and only plans to obtain it, reducing confidence in compliance.",
+          "evidence": "We are a young company and have not yet completed formal certification ourselves; an ISO 27001 programme is planned."
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 5.0,
+          "benchmark": 8.5,
+          "gap": -3.5,
+          "relative_pct": 58.8235,
+          "weighted_points": 5.0,
+          "status": "OK",
+          "evidence_verified": true,
+          "justification": "Support offers business‑hour email/web portal with a one‑day response SLA, but lacks out‑of‑hours coverage and a dedicated service manager; experience in the public library sector is limited to none.",
+          "evidence": "Support is provided by email and web portal during business hours, 09:00 to 17:00 Monday to Friday, with a target response of one business day."
+        }
+      ],
+      "risks": [
+        "The supplier does not hold ISO 27001 certification at contract start, only a planned programme, which may not satisfy required security and compliance standards."
+      ],
+      "overall_summary": "BrightPath Tech presents a straightforward SaaS solution with a clear implementation timeline and transparent pricing, but technical depth and security certifications are limited. Support is basic and the vendor lacks proven experience in the public library domain, posing potential compliance and service continuity risks.",
+      "warnings": [],
+      "parse_failed": false,
+      "document": {
+        "source_name": "brightpath_tech_proposal.pdf",
+        "page_count": 3,
+        "char_count": 7097,
+        "extractor": "pymupdf",
+        "truncated": false,
+        "warnings": []
+      },
+      "final_rank": 4,
+      "tie_break_reason": "Lowest ranked supplier in this run.",
+      "tie_break_rule_level": null
+    }
+  ],
+  "benchmarks": {
+    "1": 8.5,
+    "2": 9.0,
+    "3": 7.5,
+    "4": 9.5,
+    "5": 8.5
+  },
+  "tie_breaks": [
+    {
+      "above": "Apex Systems",
+      "below": "NexaWorks",
+      "rule_level": 1,
+      "rule": "Higher Peer Performance Index",
+      "explanation": "Higher PPI: Apex Systems 97.7778 vs NexaWorks 95.2611."
+    },
+    {
+      "above": "NexaWorks",
+      "below": "Orbit Digital",
+      "rule_level": 1,
+      "rule": "Higher Peer Performance Index",
+      "explanation": "Higher PPI: NexaWorks 95.2611 vs Orbit Digital 88.3330."
+    },
+    {
+      "above": "Orbit Digital",
+      "below": "BrightPath Tech",
+      "rule_level": 1,
+      "rule": "Higher Peer Performance Index",
+      "explanation": "Higher PPI: Orbit Digital 88.3330 vs BrightPath Tech 68.3949."
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "Apex Systems: 'Technical Capability': quoted evidence was not found in the document text; score kept but marked unverified.",
+    "Apex Systems: 'Implementation Plan': quoted evidence was not found in the document text; score kept but marked unverified.",
+    "Apex Systems: 'Commercial Value': quoted evidence was not found in the document text; score kept but marked unverified.",
+    "NexaWorks: 'Implementation Plan': quoted evidence was not found in the document text; score kept but marked unverified."
+  ],
+  "agent_trace": [
+    {
+      "step": "load_criteria",
+      "detail": "Loaded 5 active criteria from SQLite (weights total 100%).",
+      "status": "ok",
+      "at": "2026-09-28T13:03:13+05:30",
+      "criteria": [
+        "Technical Capability",
+        "Implementation Plan",
+        "Commercial Value",
+        "Security & Compliance",
+        "Support & Experience"
+      ]
+    },
+    {
+      "step": "extract_document",
+      "detail": "Apex Systems: extracted 9,534 characters from 4 pages via pymupdf.",
+      "status": "ok",
+      "at": "2026-09-28T13:03:13+05:30",
+      "supplier": "Apex Systems"
+    },
+    {
+      "step": "evaluate_supplier",
+      "detail": "Apex Systems: model replied with 2,119 characters",
+      "status": "ok",
+      "at": "2026-09-28T13:03:23+05:30",
+      "supplier": "Apex Systems"
+    },
+    {
+      "step": "validate_output",
+      "detail": "Apex Systems: response was not valid JSON; sending one repair retry.",
+      "status": "warn",
+      "at": "2026-09-28T13:03:23+05:30",
+      "supplier": "Apex Systems"
+    },
+    {
+      "step": "evaluate_supplier",
+      "detail": "Apex Systems: model replied with 2,461 characters (attempt 2 of 2)",
+      "status": "ok",
+      "at": "2026-09-28T13:03:52+05:30",
+      "supplier": "Apex Systems"
+    },
+    {
+      "step": "validate_output",
+      "detail": "Apex Systems: validated with 3 correction(s) applied.",
+      "status": "warn",
+      "at": "2026-09-28T13:03:52+05:30",
+      "supplier": "Apex Systems"
+    },
+    {
+      "step": "extract_document",
+      "detail": "BrightPath Tech: extracted 7,097 characters from 3 pages via pymupdf.",
+      "status": "ok",
+      "at": "2026-09-28T13:03:52+05:30",
+      "supplier": "BrightPath Tech"
+    },
+    {
+      "step": "evaluate_supplier",
+      "detail": "BrightPath Tech: model replied with 2,395 characters",
+      "status": "ok",
+      "at": "2026-09-28T13:04:21+05:30",
+      "supplier": "BrightPath Tech"
+    },
+    {
+      "step": "validate_output",
+      "detail": "BrightPath Tech: validated cleanly, no corrections needed.",
+      "status": "ok",
+      "at": "2026-09-28T13:04:21+05:30",
+      "supplier": "BrightPath Tech"
+    },
+    {
+      "step": "extract_document",
+      "detail": "NexaWorks: extracted 9,287 characters from 4 pages via pymupdf.",
+      "status": "ok",
+      "at": "2026-09-28T13:04:21+05:30",
+      "supplier": "NexaWorks"
+    },
+    {
+      "step": "evaluate_supplier",
+      "detail": "NexaWorks: model replied with 2,760 characters",
+      "status": "ok",
+      "at": "2026-09-28T13:04:50+05:30",
+      "supplier": "NexaWorks"
+    },
+    {
+      "step": "validate_output",
+      "detail": "NexaWorks: validated with 1 correction(s) applied.",
+      "status": "warn",
+      "at": "2026-09-28T13:04:50+05:30",
+      "supplier": "NexaWorks"
+    },
+    {
+      "step": "extract_document",
+      "detail": "Orbit Digital: extracted 7,931 characters from 4 pages via pymupdf.",
+      "status": "ok",
+      "at": "2026-09-28T13:04:50+05:30",
+      "supplier": "Orbit Digital"
+    },
+    {
+      "step": "evaluate_supplier",
+      "detail": "Orbit Digital: model replied with 2,030 characters",
+      "status": "ok",
+      "at": "2026-09-28T13:05:19+05:30",
+      "supplier": "Orbit Digital"
+    },
+    {
+      "step": "validate_output",
+      "detail": "Orbit Digital: validated cleanly, no corrections needed.",
+      "status": "ok",
+      "at": "2026-09-28T13:05:19+05:30",
+      "supplier": "Orbit Digital"
+    },
+    {
+      "step": "score_benchmark_rank",
+      "detail": "Computed weighted scores, peer benchmarks, PPI and ranks for 4 supplier(s) in Python. Leader: Apex Systems.",
+      "status": "ok",
+      "at": "2026-09-28T13:05:19+05:30"
+    },
+    {
+      "step": "persist_results",
+      "detail": "Stored run RFP-20260928-DD4F0E and 4 supplier row(s) in SQLite in a single transaction.",
+      "status": "ok",
+      "at": "2026-09-28T13:05:19+05:30"
+    }
+  ],
+  "raw_llm_outputs": [
+    {
+      "supplier_name": "Apex Systems",
+      "attempt": 1,
+      "provider": "openai",
+      "model": "openai/gpt-oss-120b",
+      "faulted": false,
+      "prompt_chars": 11940,
+      "raw": "{\"supplier_name\":\"Apex Systems\",\"criteria\":[{\"criterion_id\":1,\"score\":8.5,\"max_score\":10,\"justification\":\"The proposal details a modern, scalable architecture with Kubernetes, PostgreSQL 16, Redis, and documented APIs, demonstrating strong technical depth.\",\"evidence\":\"The solution is a service-oriented application deployed on a Kubernetes cluster in two geographically separated regions, with PostgreSQL 16 in a primary-replica configuration and automated failover.\"},{\"criterion_id\":2,\"score\":8.0,\"max_score\":10,\"justification\":\"A clear nine‑month phased plan with specific milestones, team roles and migration rehearsals shows a realistic implementation approach.\",\"evidence\":\"Phase 1. Discovery and design 1-6 Solution design document, signed off\"},\"criterion_id\":3,\"score\":7.5,\"max_score\":10,\"justification\":\"The cost breakdown is transparent and includes all major items, but the total cost is relatively high for a library system.\",\"evidence\":\"Total cost of ownership $395,000 + 3 x $78,000 = $629,000\"},{\"criterion_id\":4,\"score\":9.0,\"max_score\":10,\"justification\":\"The response lists ISO 27001 certification, SOC 2 Type II, encryption, RBAC, CREST‑accredited penetration testing and clear incident response commitments, meeting high security standards.\",\"evidence\":\"Apex Systems holds ISO 27001:2022 certification, most recently audited in March 2026\"},\"criterion_id\":5,\"score\":8.0,\"max_score\":10,\"justification\":\"Provides 24x7 P1 support with defined SLAs, a service delivery manager, and relevant public sector references, indicating solid support capability.\",\"evidence\":\"Support is 24x7 for priority 1 incidents with a one hour response target and a four hour resolution target\"}],\"risks\":[\"Potential loss of key personnel (Solution Architect or Data Migration Lead) could impact delivery despite contractual commitments\"],\"overall_summary\":\"Apex Systems presents a technically robust solution with a detailed implementation roadmap and strong security posture. Commercially the proposal is transparent but carries a higher total cost, and reliance on specific staff members introduces a personnel risk.\"}"
+    },
+    {
+      "supplier_name": "Apex Systems",
+      "attempt": 2,
+      "provider": "openai",
+      "model": "openai/gpt-oss-120b",
+      "faulted": false,
+      "prompt_chars": 12830,
+      "raw": "{\"supplier_name\":\"Apex Systems\",\"criteria\":[{\"criterion_id\":1,\"score\":8.5,\"max_score\":10,\"justification\":\"The proposal details a modern, scalable architecture with Kubernetes, PostgreSQL 16, Redis and documented APIs, showing strong technical depth and integration capability.\",\"evidence\":\"The solution is a service‑oriented application deployed on a Kubernetes cluster in two geographically separated regions, with PostgreSQL 16 in a primary‑replica configuration and automated failover.\"},{\"criterion_id\":2,\"score\":8.0,\"max_score\":10,\"justification\":\"A clear nine‑month phased plan with specific milestones, team roles and data‑migration rehearsals demonstrates a realistic implementation approach.\",\"evidence\":\"We propose a nine month programme... Phase 1 Discovery and design 1-6 ... Solution design document, signed off\"},{\"criterion_id\":3,\"score\":7.5,\"max_score\":10,\"justification\":\"The cost breakdown is transparent and includes fixed implementation fees and recurring charges, but payment terms are not detailed, limiting full assessment of value.\",\"evidence\":\"Pricing is fixed-price for the implementation, with recurring charges held flat for the initial three year term... Total cost of ownership $395,000 + 3 x $78,000 = $629,000\"},{\"criterion_id\":4,\"score\":9.5,\"max_score\":10,\"justification\":\"The solution is backed by ISO 27001:2022 certification, SOC 2 Type II, encryption, role‑based access and regular CREST‑accredited penetration testing, meeting high security standards.\",\"evidence\":\"Apex Systems holds ISO 27001:2022 certification, most recently audited in March 2026, and completes an annual SOC 2 Type II examination.\"},{\"criterion_id\":5,\"score\":8.5,\"max_score\":10,\"justification\":\"24x7 support with defined SLAs, a service delivery manager and relevant public‑sector references provide confidence in ongoing service and experience.\",\"evidence\":\"Support is 24x7 for priority 1 incidents with a one hour response target and a four hour resolution target\"}],\"risks\":[\"Potential loss of key personnel (Solution Architect or Data Migration Lead) despite contractual commitment could jeopardise migration schedule\"],\"overall_summary\":\"Apex Systems presents a technically robust, well‑documented solution with solid security and support arrangements. The implementation plan is detailed and realistic, though commercial terms lack full payment detail. The main risk lies in reliance on specific staff members for critical migration activities.\"}"
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "attempt": 1,
+      "provider": "openai",
+      "model": "openai/gpt-oss-120b",
+      "faulted": false,
+      "prompt_chars": 9506,
+      "raw": "{\"supplier_name\":\"BrightPath Tech\",\"criteria\":[{\"criterion_id\":1,\"score\":5,\"max_score\":10,\"justification\":\"The proposal describes a multi‑tenant SaaS on a major cloud provider and a standard SIP2 connector, showing basic technical architecture but lacks detail on scalability, performance and deeper technical depth.\",\"evidence\":\"BrightPath Library Cloud is a multi-tenant SaaS application hosted on a major public cloud provider.\"},{\"criterion_id\":2,\"score\":8,\"max_score\":10,\"justification\":\"A clear four‑phase, 16‑week schedule with defined milestones, team roles and data migration approach is provided, indicating a realistic implementation plan.\",\"evidence\":\"Sixteen weeks, four phases. The plan assumes the Service can make configuration decisions within five working days of each request.\"},{\"criterion_id\":3,\"score\":7,\"max_score\":10,\"justification\":\"The cost breakdown is detailed and totals are transparent, giving a clear view of total cost of ownership, though commercial assumptions are limited.\",\"evidence\":\"Total cost of ownership $186,000 + 3 x $34,000 = $288,000\"},{\"criterion_id\":4,\"score\":4,\"max_score\":10,\"justification\":\"The solution is hosted on a cloud with industry certifications, but the supplier has no current ISO 27001 certification and only plans to obtain it, reducing confidence in compliance.\",\"evidence\":\"We are a young company and have not yet completed formal certification ourselves; an ISO 27001 programme is planned.\"},{\"criterion_id\":5,\"score\":5,\"max_score\":10,\"justification\":\"Support offers business‑hour email/web portal with a one‑day response SLA, but lacks out‑of‑hours coverage and a dedicated service manager; experience in the public library sector is limited to none.\",\"evidence\":\"Support is provided by email and web portal during business hours, 09:00 to 17:00 Monday to Friday, with a target response of one business day.\"}],\"risks\":[\"The supplier does not hold ISO 27001 certification at contract start, only a planned programme, which may not satisfy required security and compliance standards.\"],\"overall_summary\":\"BrightPath Tech presents a straightforward SaaS solution with a clear implementation timeline and transparent pricing, but technical depth and security certifications are limited. Support is basic and the vendor lacks proven experience in the public library domain, posing potential compliance and service continuity risks.\"}"
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "attempt": 1,
+      "provider": "openai",
+      "model": "openai/gpt-oss-120b",
+      "faulted": false,
+      "prompt_chars": 11690,
+      "raw": "{\"supplier_name\":\"NexaWorks\",\"criteria\":[{\"criterion_id\":1,\"score\":8,\"max_score\":10,\"justification\":\"The proposal details a modern cloud‑hosted architecture with managed containers, PostgreSQL, backups and read‑replica reporting, showing solid technical depth though lacking explicit performance metrics.\",\"evidence\":\"The platform is a cloud-hosted application built on our established library product, configured and extended for the Service. It runs on managed container infrastructure with a managed PostgreSQL database, automated daily backups with 35 day retention, and a tested restore procedure exercised quarterly.\"},{\"criterion_id\":2,\"score\":9,\"max_score\":10,\"justification\":\"A clear seven‑month, seven‑phase plan with staged rollout, defined exit criteria and named accountability demonstrates a realistic and well‑governed implementation schedule.\",\"evidence\":\"Seven months, seven phases, with a staged rollout. Two pilot branches go live in week 20; the remaining ten follow in three waves once the pilot has run a full month.\"},{\"criterion_id\":3,\"score\":7,\"max_score\":10,\"justification\":\"The cost breakdown is transparent and includes both one‑off and recurring charges, but payment terms and potential cost overruns are not addressed.\",\"evidence\":\"Total cost of ownership $312,000 + 3 x $58,000 = $486,000\"},{\"criterion_id\":4,\"score\":9,\"max_score\":10,\"justification\":\"The response lists ISO 27001 certification, encryption, role‑based access, audit logging and a pre‑go‑live penetration test, meeting most security and compliance expectations.\",\"evidence\":\"NexaWorks holds ISO 27001 certification and operates a documented secure development lifecycle including peer review, dependency scanning and static analysis on every change.\"},{\"criterion_id\":5,\"score\":8,\"max_score\":10,\"justification\":\"Support hours align with library opening times and SLAs are clearly defined; references to similar projects add credibility, though no third‑party verification is provided.\",\"evidence\":\"Support runs 07:00 to 19:00 Monday to Saturday, matching library opening hours rather than office hours, with on-call cover for priority 1 incidents outside those times. Response targets are 30 minutes for priority 1, two hours for priority 2, and one business day for priority 3.\"}],\"risks\":[\"The continuous improvement pool hours do not roll over between years, risking unused budget if demand for small changes is lower than anticipated.\"],\"overall_summary\":\"NexaWorks presents a technically sound, well‑structured solution with detailed implementation and security plans, supported by clear cost information and relevant references. However, limited detail on payment terms and the non‑rollover improvement pool introduce financial and budgeting uncertainties.\"}"
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "attempt": 1,
+      "provider": "openai",
+      "model": "openai/gpt-oss-120b",
+      "faulted": false,
+      "prompt_chars": 10338,
+      "raw": "{\"supplier_name\":\"Orbit Digital\",\"criteria\":[{\"criterion_id\":1,\"score\":6.5,\"max_score\":10,\"justification\":\"The proposal describes a mature version‑11 cloud‑based platform and integration experience, but provides limited detail on scalability testing or performance metrics.\",\"evidence\":\"Orbit Library Platform is a mature product, currently on version 11, used by 61 library services.\"},{\"criterion_id\":2,\"score\":8,\"max_score\":10,\"justification\":\"A detailed eight‑month phased plan with weekly milestones, defined team roles and risk mitigations is presented, showing realistic delivery.\",\"evidence\":\"Eight months, following our standard implementation methodology refined across 61 deployments.\"},{\"criterion_id\":3,\"score\":7,\"max_score\":10,\"justification\":\"The cost breakdown is clear and includes one‑off and recurring charges, yet payment terms are limited to CPI review after year four and no discount or financing options are disclosed.\",\"evidence\":\"Total cost of ownership $268,000 + 3 x $62,000 = $454,000\"},{\"criterion_id\":4,\"score\":9,\"max_score\":10,\"justification\":\"ISO 27001 and ISO 9001 certifications, encryption at rest and in transit, role‑based access and regular penetration testing demonstrate strong security and compliance posture.\",\"evidence\":\"Orbit Digital holds ISO 27001 and ISO 9001 certification, both audited within the last twelve months.\"},{\"criterion_id\":5,\"score\":8.5,\"max_score\":10,\"justification\":\"Support model includes 08:00‑18:00 coverage, one‑hour priority response, dedicated account manager and extensive library‑sector experience, though out‑of‑hours support incurs extra cost.\",\"evidence\":\"Priority 1 response is one hour.\"}],\"risks\":[\"Integration scope may exceed the allowance, leading to additional costs and schedule variation.\"],\"overall_summary\":\"Orbit Digital presents a solid technical and implementation approach with clear costs and strong security credentials. However, limited performance detail and potential integration cost overruns pose risks that the buyer should manage.\"}"
+    }
+  ],
+  "formulas": {
+    "weighted_points": "score / max_score x weight",
+    "absolute_score": "sum of weighted points across all active criteria (0-100)",
+    "benchmark": "highest validated score for that criterion across this run",
+    "gap": "score - benchmark (0 for the criterion leader, otherwise negative)",
+    "relative_performance_pct": "score / benchmark x 100 (0 for everyone if benchmark is 0)",
+    "ppi": "sum(relative % x weight) / sum(weight)",
+    "tie_breaks": "1. higher PPI (4dp)  2. earlier submission date  3. higher experience rating  4. supplier name A-Z"
+  },
+  "error": null
+}
